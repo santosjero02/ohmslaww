@@ -1,0 +1,335 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #28282c, #556c9e);
+  color: #F8F8F8;
+}
+
+/* Header (Navigation Bar) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: #2d2739;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInAnimation 2s forwards;
+}
+
+@keyframes slideInAnimation {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.bounce-in {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: bounceInAnimation 2s forwards;
+}
+
+@keyframes bounceInAnimation {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #61ccf4; /* Electric Blue */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #F8F8F8;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00E1FF; /* Cyan */
+}
+
+/* Home Page Layout */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 40%;
+}
+
+.home-content h2 {
+  font-size: 46px; /* Bigger heading */
+  color: white;
+}
+.home-content p {
+  font-size: 20px;
+}
+
+/* Left Text Section */
+.home-text {
+  flex: 1;
+  text-align: left;
+}
+
+.home-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.home-text h1 span {
+  color: cyan;
+}
+
+.home-text p {
+  font-size: 30px;
+  color: #E0E0E0;
+  margin: 23px 0;
+}
+
+.home-text hr {
+  width: 100px;
+  border: 2px solid #00AEEF;
+  margin: 10px 0;
+}
+
+.role {
+  font-size: 40px;
+  font-weight: bold;
+  color: #C0C0C0;
+}
+
+/* Buttons */
+.home-buttons {
+  margin-top: 20px;
+}
+
+.home-buttons button {
+  background: linear-gradient(to right, #00E1FF, #0084FF);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.home-buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 225, 255, 0.4);
+}
+
+/* Right Image Section */
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.home-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #00AEEF;
+  filter: grayscale(50%);
+}
+
+/* Content Page Layout (Ohm’s Law & Resistors) */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 50px 80px;
+}
+.container {
+  max-width: 800px;
+  background: rgba(46, 46, 58, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.example-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.example-container {
+  width: 44%; /* Ensures two containers fit in one row */
+  padding: 15px;
+  border: 1px solid #e5fbff;
+  border-radius: 5px;
+  background: #5e7983;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.side-img {
+  float: right; /* Image moves to the right */
+  width: 300px; /* Adjust size */
+  margin-left: 15px; /* Space between text and image */
+  margin-right: 50px;
+  border-radius: 5px; /* Optional styling */
+}
+
+.color-band{
+  float: right; /* Image moves to the right */
+  width: 450px; /* Adjust size */
+  margin-left: 15px; /* Space between text and image */
+  margin-right: 50px;
+  border-radius: 5px; /* Optional styling */
+}
+
+h3 {
+  font-size: 35px;
+  color: #00E1FF;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+li{
+  font-size: 24px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+p{
+  font-size: 22px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+ol{
+  font-size: 19px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 250, 250, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 30px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: #00E1FF;
+    margin-left: 40px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+}
+.table-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.table-container > div {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #00AEEF;
+  color: white;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  border-color: #00AEEF;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 30px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: #00E1FF;
+    margin-left: 40px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
